@@ -1,0 +1,177 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Lekton:ital@1&display=swap');
+@import url( 'https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body {
+    margin: 20;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    font-family: 'Lekton', sans-serif;
+    background-color: #082133;
+}
+
+.text {
+    color: white;
+    size: 10mm;
+    background: #1BA098;
+}
+
+.Menu {
+    border: transparent;
+}
+.Menu:hover {
+    background-color: #1BA098;
+}
+.Menu::selection {
+    background: transparent;
+}
+
+.button_menu {
+    border: transparent;
+}
+
+li {
+    text-decoration: none;
+    color: #1BA098;
+}
+
+.ChoiceMenu {
+    text-decoration: none;
+}
+
+.Name {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    text-decoration: none;
+    color: #DEB992;
+}
+
+.Illustration {
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    top: 290px;
+    width: 800px;
+    transition: 0.8s;
+    animation: fadeOut 5s;
+}
+
+#Rpg {
+    opacity: 0;
+}
+
+#_42sh {
+    opacity: 0;
+}
+
+#Tetris {
+    opacity: 1;
+}
+
+.Project_Illustration {
+    position: absolute;
+    opacity: 1;
+    animation: ScaleUp 2s;
+    width: 1000px;
+    top: 200px;
+    left: 50%;margin-left: -480px;
+}
+
+@keyframes shadow {
+    from {filter: drop-shadow(0px 0px 0px red);}
+    to {filter: drop-shadow(16px 16px 20px red);}
+}
+
+@keyframes ScaleUp {
+  from {width: 800px; top:290px;left: 50%; margin-left: -400px;}
+  to {width: 1000px; top: 200px; left: 50%;margin-left: -480px;}
+}
+
+
+.fade-enter,
+fade-appear {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 50a0ms linear;
+    scale: 0;
+    transition: scale 30ms linear 0.1ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 0ms linear;
+}
+
+.icon-scroll {
+    animation: fade 1.5s forwards 1s;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 50%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(46px);
+  }
+}
+
+.WhiteSpace{
+    color: transparent;
+    font-size: 150px;
+}
+
+.Rpg_illustration {
+    position: relative;
+    left: -200px;
+    padding-bottom: 50px;
+}
+
+.WhiteSpace_small{
+    color: transparent;
+    font-size: 20px;
+}
